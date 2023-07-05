@@ -1,117 +1,79 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body,
+.form button {
+  font-family: "Poppins", sans-serif;
+}
+
+.form button {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .container {
-  width: 1366px;
+  max-width: 640px;
   margin: 0 auto;
-}
-
-body > header {
-  background-color: #2f3640;
-  padding: 16px 0;
-  color: #f5f6fa;
-}
-
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header li {
-  display: inline;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-header li a {
-  color: #f5f6fa;
-  text-decoration: none;
-  margin-left: 16px;
-}
-
-.articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.articles article img {
   width: 100%;
 }
 
-.articles article {
-  width: 30%;
+.header-bg {
+  background-color: #3a5683;
 }
 
-section {
-  padding: 16px 0;
-}
-
-section h2 {
-  font-size: 32px;
-}
-
-section h2,
-.articles article {
-  margin-bottom: 16px;
-}
-
-.articles article h3 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  font-size: 24px;
-}
-
-.articles article a {
-  background-color: blue;
+.header h1 {
+  text-align: center;
+  padding: 16px;
   color: #fff;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form input,
+.form button {
+  display: block;
+  width: 100%;
   padding: 8px;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 8px;
-}
-.articles article a:hover {
-  text-decoration: underline;
+  margin-bottom: 8px;
 }
 
-.articles article p,
-.articles article a {
-  font-family: Arial, Helvetica, sans-serif;
+.form input:focus {
+  outline-color: #3a5683;
 }
 
-#sports {
-  background-color: rgba(0, 255, 0, 0.1);
+.form button {
+  background-color: #3a5683;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-#sports .articles article a {
-  background-color: #009432;
+.form button:hover {
+  background-color: #628199;
 }
 
-#economy {
-  background-color: #f8f59f;
+.sucess-message {
+  text-align: center;
+  background-color: rgba(34, 187, 51, 0.8);
+  padding: 8px;
 }
 
-#economy .articles article a {
-  background-color: #ff9f1a;
-}
-
-#entertainment {
-  background-color: #ea7b9b;
-}
-
-#entertainment .articles article a {
-  background-color: #db2458;
-}
-
-#tecnology {
-  background-color: #d773ff;
-}
-
-#tecnology .articles article a {
-  background-color: #c539fd;
+.error-message {
+  text-align: center;
+  background-color: rgba(187, 33, 36, 0.8);
+  padding: 8px;
 }
