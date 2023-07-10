@@ -5,33 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 7 - Exercício</title>
+    <title>Módulo 9 - Exercício</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header-bg">
-        <div class="header container">
-            <h1>Integração HTML com JavaScript</h1>
-        </div>
-    </header>
+    <div class="container">
+        <header class="header">
+            <h1>Lista de tarefas</h1>
+        </header>
+        <form id="form-tarefa" class="form">
+            <input type="text" id="nome-tarefa" placeholder="Nome da tarefa" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <ul id="lista-tarefa" class="lista-tarefa"></ul>
+    </div>
 
-    <section>
-        <div class="container">
-            <form action="" class="form" id="form-verify">
-                <input type="number" name="campoa" id="campoa" placeholder="Campo A">
-                <input type="number" name="campob" id="campob" placeholder="Campo B">
-                <button type="submit" class="btn-verify">Verificar</button>
-            </form>
-            <p id="message"></p>
-        </div>
-    </section>
-
-    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
