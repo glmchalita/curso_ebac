@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 9 - Exercício</title>
+    <title>Módulo 10 - Exercício</title>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,16 +16,41 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>Lista de tarefas</h1>
+            <h1>Cadastro Newsletter</h1>
         </header>
-        <form id="form-tarefa" class="form">
-            <input type="text" id="nome-tarefa" placeholder="Nome da tarefa" required>
+        <form id="form" class="form">
+            <div class="form-item">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+            </div>
+            <div class="form-item">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@provedor.com">
+            </div>
+            <div class="form-item">
+                <label for="celular">Celular</label>
+                <input type="tel" name="celular" id="celular" placeholder="(00) 12345-1234 (Digite apenas os números)">
+            </div>
+            <div class="form-item">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="123-456-789-14 (Digite apenas os números)">
+            </div>
+            <div class="form-item">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço completo">
+            </div>
+            <div class="form-item">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="01234-000 (Digite apenas os números)">
+            </div>
             <button type="submit">Cadastrar</button>
         </form>
-        <ul id="lista-tarefa" class="lista-tarefa"></ul>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

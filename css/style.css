@@ -4,11 +4,13 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
 html,
 body,
 .container {
   height: 100%;
 }
+
 .container {
   max-width: 980px;
   width: 100%;
@@ -16,25 +18,26 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .header h1 {
   text-align: center;
   font-size: 40px;
-  /* margin-top: 200px; */
-  margin-bottom: 16px;
+  margin-right: 16px;
 }
 
 .form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
 .form input {
   padding: 8px;
-  font-size: 24px;
+  font-size: 18px;
+  width: 500px;
+  display: block;
 }
 
 .form button {
@@ -43,18 +46,6 @@ body,
   font-weight: 500;
 }
 
-.lista-tarefa {
-  margin-top: 16px;
-  display: flex;
-  font-size: 20px;
-  text-align: center;
-  flex-direction: column;
-  cursor: pointer;
-  height: 250px;
-  overflow: auto;
-  gap: 8px;
-}
-
-.linha {
-  text-decoration: line-through;
+.form-item label {
+  font-weight: 500;
 }
