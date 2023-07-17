@@ -21,21 +21,27 @@
                 <form>
                     <div class="mb-3">
                         <label for="nomeInput" class="form-label">Nome</label>
-                        <input id="nomeInput" type="text" required class="form-control">
+                        <input id="nomeInput" name="nomeInput" type="text" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label for="emailInput" class="form-label">E-mail</label>
-                        <input id="emailInput" type="email" required class="form-control">
+                        <input id="emailInput" name="emailInput" type="email" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label for="telInput" class="form-label">Telefone</label>
-                        <input id="telInput" type="tel" required class="form-control">
+                        <input id="telInput" name="telInput" type="tel" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
