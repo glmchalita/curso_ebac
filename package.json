@@ -1,0 +1,28 @@
+{
+  "name": "Git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2"
+  },
+  "scripts": {
+    "build": "babel --watch src -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": "> 0.25%",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glmchalita/curso_ebac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glmchalita/curso_ebac/issues"
+  },
+  "homepage": "https://github.com/glmchalita/curso_ebac#readme"
+}
